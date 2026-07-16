@@ -36,6 +36,7 @@ Complete Day 1 or review its core concepts. Install Python, Jupyter, and the dep
 4. Review [`docs/create_analysis.md`](docs/create_analysis.md).
 5. Compare the available GenAI-assisted analysis notebooks.
 6. Complete the group activity and validate privacy, code, assumptions, and results.
+7. Continue with the [curated supplementary resources](docs/supplementary-resources.md).
 
 ## Notebooks
 
@@ -69,5 +70,8 @@ See [Troubleshooting](#troubleshooting) below.
 - If a dataset path fails, select the public workshop file in [`data/`](data/) rather than private data.
 - Clear sensitive outputs before saving or sharing a notebook.
 
-[Back to the workshop README](../README.md)
+## Supplementary resources
 
+Five authoritative references on privacy risk, pandas, Jupyter security, analytical leakage, and prompt-injection defenses are available in the [Day 2 supplementary-resources guide](docs/supplementary-resources.md).
+
+[Back to the workshop README](../README.md)

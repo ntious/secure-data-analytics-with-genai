@@ -32,6 +32,7 @@ Bring a computer with a modern browser. If local exercises are announced, instal
 3. Practice structured prompting.
 4. Apply prompts to research, teaching, writing, and coding scenarios.
 5. Complete the group activity and discuss risks and validation.
+6. Continue with the [curated supplementary resources](docs/supplementary-resources.md).
 
 ## Notebooks
 
@@ -58,5 +59,8 @@ See [Troubleshooting](#troubleshooting) below.
 - If an AI tool is unavailable, complete the prompt-design exercise without submitting the prompt.
 - Never work around an access problem by uploading restricted information to another service.
 
-[Back to the workshop README](../README.md)
+## Supplementary resources
 
+Five authoritative references on GenAI in education and research, AI risk management, trustworthy AI, copyright, and academic integrity are available in the [Day 1 supplementary-resources guide](docs/supplementary-resources.md).
+
+[Back to the workshop README](../README.md)
