@@ -148,7 +148,7 @@ Citation metadata is provided in [CITATION.cff](CITATION.cff). Update `REPOSITOR
 
 ## Licenses
 
-Code—including scripts, notebook code cells, reusable examples, configuration, and workflow files—is licensed under the [MIT License](LICENSE). Educational content—including Markdown, workshop notes, figures, activity instructions, diagrams, and notebook Markdown cells—is licensed under [CC BY 4.0](CONTENT-LICENSE.md). Third-party datasets and libraries retain their original terms.
+Code including scripts, notebook code cells, reusable examples, configuration, and workflow files—is licensed under the [MIT License](LICENSE). Educational content—including Markdown, workshop notes, figures, activity instructions, diagrams, and notebook Markdown cells—is licensed under [CC BY 4.0](CONTENT-LICENSE.md). Third-party datasets and libraries retain their original terms.
 
 ## Acknowledgments
 
