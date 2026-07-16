@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible problem in public workshop materials.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include secrets, participant information, private links, or sensitive data. Report security concerns using SECURITY.md.
+  - type: input
+    id: location
+    attributes:
+      label: Affected file or section
+      placeholder: day-2/notebooks/example.ipynb
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: Describe what happened and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Safe reproduction steps
+      description: Use public or synthetic data only.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Operating system, Python version, and notebook tool
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I removed secrets, private data, participant information, and sensitive outputs.
+          required: true
+        - label: This is not a vulnerability report.
+          required: true
+

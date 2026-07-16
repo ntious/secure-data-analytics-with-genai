@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use these workshop materials, please cite them using this metadata."
+title: "Secure Data Analytics with GenAI and LLMs"
+type: software
+authors:
+  - family-names: "Nti"
+    given-names: "I. K."
+  - family-names: "Kyeremeh"
+    given-names: "F."
+year: 2026
+date-released: 2026-07-16
+repository-code: "REPOSITORY_URL"
+url: "REPOSITORY_URL"
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: >-
+  Reusable materials for the Secure Data Analytics with GenAI and LLMs
+  workshop, covering AI literacy, responsible prompting, metadata-driven
+  secure prompting, and privacy-conscious local analytics with Python and
+  Jupyter notebooks.
+

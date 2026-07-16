@@ -1,0 +1,34 @@
+name: Documentation improvement
+description: Suggest a correction or improvement to public documentation.
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or section
+      placeholder: README.md — Getting started
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What should be improved?
+      description: Explain what is unclear, incorrect, inaccessible, or missing.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording or approach
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: This report contains no secrets, participant information, private links, or sensitive data.
+          required: true
+        - label: This is not a vulnerability report.
+          required: true
+

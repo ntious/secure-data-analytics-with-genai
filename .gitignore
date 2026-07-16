@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# Jupyter and test tooling
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environment files, credentials, keys, and tokens
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+secrets*.json
+token*.json
+
+# Local analytical outputs and private material
+mdsp_outputs/
+outputs/
+generated_outputs/
+participant_submissions/
+private_data/
+local_data/
+LOCAL_ONLY_*
+
+# Keep intentionally published synthetic workshop data under day-2/data/.
+

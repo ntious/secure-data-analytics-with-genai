@@ -1,0 +1,20 @@
+#Questions we can explore with dataset
+
+1. How strongly does household income predict housing value?
+Examine the relationship between median_income and median_house_value. 
+
+2. How much does geographic location affect housing values after controlling for income?
+Use longitude and latitude to identify geographic price patterns, then control for median income and housing characteristics. This can determine whether otherwise similar communities have different housing values because of location.
+
+3. Do community density and crowding influence housing values?
+Construct measures such as:
+* Population per household
+* Rooms per household
+* Bedrooms per household
+Then test whether denser or more crowded communities have systematically higher or lower housing values.
+
+4. Does the age of the housing stock affect property values?
+Investigate whether housing_median_age predicts median_house_value after controlling for income, location, and community size. A nonlinear analysis could reveal whether values rise with age in established neighborhoods but decline for very old housing stock.
+
+5. Which combination of socioeconomic, geographic, and housing characteristics best predicts housing value?
+Compare multiple machine-learning models using income, location, housing age, population, rooms, bedrooms, and households. Also identify the most important predictors and measure how accurately housing values can be estimated.
