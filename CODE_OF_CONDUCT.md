@@ -36,7 +36,7 @@ This Code of Conduct applies within all community spaces and when an individual 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders at `CODE_OF_CONDUCT_CONTACT_EMAIL`. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders at `ntious@duck.com`. All complaints will be reviewed and investigated promptly and fairly.
 
 Community leaders must respect the privacy and security of the reporter of any incident.
 
