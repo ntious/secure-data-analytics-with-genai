@@ -19,7 +19,6 @@ This public educational repository supports a two-day Python and Jupyter Noteboo
   - **Dr. I. K. Nti**, Assistant Professor, University of Cincinnati, USA; Co-Lead, Information Technology Analytics Center
   - **Dr. F. Kyeremeh**, Sunyani Technical University, Ghana
 
-No meeting credentials, registration exports, participant details, or private facilitator notes belong in this repository.
 
 ## Workshop purpose
 
