@@ -9,8 +9,8 @@ authors:
     given-names: "F."
 year: 2026
 date-released: 2026-07-16
-repository-code: "REPOSITORY_URL"
-url: "REPOSITORY_URL"
+repository-code: "https://github.com/ntious/secure-data-analytics-with-genai"
+url: "https://github.com/ntious/secure-data-analytics-with-genai"
 license:
   - MIT
   - CC-BY-4.0
@@ -19,4 +19,3 @@ abstract: >-
   workshop, covering AI literacy, responsible prompting, metadata-driven
   secure prompting, and privacy-conscious local analytics with Python and
   Jupyter notebooks.
-

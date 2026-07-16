@@ -6,7 +6,7 @@ Security fixes are applied to the current default branch. Workshop snapshots, fo
 
 ## Reporting a vulnerability
 
-Please report vulnerabilities privately through GitHub Private Vulnerability Reporting or a draft GitHub Security Advisory, where available. If neither option is available, contact `SECURITY_CONTACT_EMAIL`.
+Please report vulnerabilities privately through GitHub Private Vulnerability Reporting or a draft GitHub Security Advisory, where available. If neither option is available, contact `ntious@duck.com`.
 
 Do not disclose a vulnerability, exposed secret, private URL, or sensitive data in a public issue, discussion, pull request, or fork.
 
@@ -26,4 +26,3 @@ We aim to acknowledge a report within five business days. Investigation and reme
 Reports may cover repository scripts, notebooks, GitHub Actions workflows, dependency configuration, insecure educational patterns, and accidental exposure of credentials, participant information, private links, or confidential data.
 
 Educational examples are not production security guarantees. Findings based solely on the absence of production controls in clearly labeled teaching examples may be closed as out of scope, but concrete risks to repository users are welcome.
-

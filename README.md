@@ -153,7 +153,7 @@ Do not report suspected vulnerabilities or exposed secrets in a public issue. Fo
 
 ## Citation
 
-Citation metadata is provided in [CITATION.cff](CITATION.cff). Update `REPOSITORY_URL` before publishing a release.
+Citation metadata is provided in [CITATION.cff](CITATION.cff).
 
 ## Licenses
 
