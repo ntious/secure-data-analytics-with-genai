@@ -6,6 +6,7 @@
 [![CC BY 4.0](https://img.shields.io/badge/educational%20content-CC%20BY%204.0-lightgrey.svg)](CONTENT-LICENSE.md)
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ntious/secure-data-analytics-with-genai/main?urlpath=lab/tree/day-2/notebooks/start_here_01.ipynb)
 [![CodeQL](https://img.shields.io/badge/security-CodeQL-2f81f7.svg)](.github/workflows/codeql.yml)
 
 This public educational repository supports a two-day Python and Jupyter Notebook workshop on secure data analytics with GenAI, metadata-driven secure prompting, privacy-conscious AI-assisted analytics, and the responsible use of large language models.
@@ -104,10 +105,18 @@ Column names, free-text descriptions, uncommon categories, schema combinations, 
 
 ## Getting started
 
+### Open in Binder
+
+Select the **Launch Binder** badge above to open the Day 2 starter notebook in a temporary browser-based JupyterLab environment. The first launch may take several minutes while Binder builds the environment.
+
+Binder sessions are temporary and public-cloud hosted. Do not upload private, confidential, regulated, or participant data. Save any work you need before the session expires. In Binder, use repository-relative paths such as `day-2/data/california_housing_combined.csv` rather than local or Google Colab paths such as `/content/...`.
+
+### Run locally
+
 1. Clone or download the repository.
 2. Install Python 3 and JupyterLab or Jupyter Notebook.
 3. Create and activate a local virtual environment.
-4. Install only the packages required by the material you plan to use.
+4. Install the workshop dependencies with `python -m pip install -r requirements.txt`.
 5. Begin with the [Day 1 guide](day-1/) or [Day 2 guide](day-2/).
 
 ## Required tools
