@@ -1,7 +1,12 @@
 import pandas as pd
 from pathlib import Path
-from urllib.parse import urlparse
 import sys
+
+DAY2_ROOT = Path(__file__).resolve().parents[1]
+if str(DAY2_ROOT) not in sys.path:
+    sys.path.insert(0, str(DAY2_ROOT))
+
+from data_source_safety import DataSourceSafetyError, load_csv_safely, spreadsheet_safe_copy
 
 # ==========================================
 # CONFIGURATION: Change only the value below
@@ -15,25 +20,15 @@ def main():
         print("Error: Please provide a valid local path or URL in the DATA_SOURCE variable.")
         return
 
-    # Determine source type
-    parsed_url = urlparse(DATA_SOURCE)
-    is_url = bool(parsed_url.scheme in ('http', 'https'))
-
-    if is_url:
-        if "/blob/" in DATA_SOURCE:
-            print("Error: GitHub /blob/ URL detected. Please open the file on GitHub, click the 'Raw' button, and use that URL instead.")
-            return
-    
     try:
-        # Load dataset
-        mydata = pd.read_csv(DATA_SOURCE)
+        mydata = load_csv_safely(DATA_SOURCE)
         
         if mydata.empty or mydata.shape[1] == 0:
             print("Error: The dataset contains no data or no columns.")
             return
             
-    except Exception as e:
-        print(f"Error loading dataset: The file could not be accessed or is not a valid CSV.")
+    except DataSourceSafetyError as exc:
+        print(f"Error loading dataset: {exc}")
         return
 
     # 1. Dataset Dimensions
@@ -97,7 +92,7 @@ def main():
         'student_notes': ''
     })
 
-    metadata_review.to_csv(output_path, index=False)
+    spreadsheet_safe_copy(metadata_review).to_csv(output_path, index=False)
 
     print(f"\n{'='*20}")
     print("NEXT MDSP STEP")

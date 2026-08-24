@@ -22,6 +22,12 @@ from urllib.parse import urlparse
 
 import pandas as pd
 
+DAY2_ROOT = Path(__file__).resolve().parents[1]
+if str(DAY2_ROOT) not in sys.path:
+    sys.path.insert(0, str(DAY2_ROOT))
+
+from data_source_safety import spreadsheet_safe_copy, validate_remote_url
+
 # ---------------------------------------------------------------------------
 # Configuration - the student changes only this value.
 # ---------------------------------------------------------------------------
@@ -73,12 +79,10 @@ def _check_github_blob(url: str) -> None:
 
 
 def _validate_remote_url(url: str) -> None:
-    parsed = urlparse(url)
-    if parsed.scheme not in ("http", "https"):
-        raise DataSourceError("Unsupported URL scheme. Only http and https are permitted.")
-    if not parsed.netloc:
-        raise DataSourceError("The URL does not appear to be valid.")
-    _check_github_blob(url)
+    try:
+        validate_remote_url(url)
+    except RuntimeError as exc:
+        raise DataSourceError(str(exc)) from exc
 
 
 def _decode_bytes(raw_bytes: bytes) -> Tuple[str, str]:
@@ -95,6 +99,7 @@ def _decode_bytes(raw_bytes: bytes) -> Tuple[str, str]:
 
 
 def _fetch_remote_csv_bytes(url: str) -> bytes:
+    _validate_remote_url(url)
     try:
         import requests
     except ImportError as exc:
@@ -105,7 +110,16 @@ def _fetch_remote_csv_bytes(url: str) -> bytes:
 
     max_bytes = MAX_DOWNLOAD_SIZE_MB * 1024 * 1024
     try:
-        with requests.get(url, stream=True, timeout=REMOTE_TIMEOUT_SECONDS, allow_redirects=True) as response:
+        with requests.get(
+            url,
+            stream=True,
+            timeout=(5, REMOTE_TIMEOUT_SECONDS),
+            allow_redirects=False,
+        ) as response:
+            if 300 <= response.status_code < 400:
+                raise DataSourceError(
+                    "Remote redirects are not followed; use the final approved URL."
+                )
             if response.status_code != 200:
                 raise DataSourceError(
                     f"The remote source returned an unsuccessful HTTP status ({response.status_code})."
@@ -402,7 +416,9 @@ def save_metadata_review(metadata_review: pd.DataFrame, output_file: Path) -> No
             "and will be overwritten."
         )
     try:
-        metadata_review.to_csv(output_file, index=False, encoding="utf-8")
+        spreadsheet_safe_copy(metadata_review).to_csv(
+            output_file, index=False, encoding="utf-8"
+        )
     except OSError as exc:
         raise DataSourceError("The local metadata review file could not be written.") from exc
 
