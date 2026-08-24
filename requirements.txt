@@ -1,7 +1,7 @@
 # Runtime dependencies used by the published workshop scripts and notebooks.
 # Binder installs this file when building the browser-based environment.
 matplotlib>=3.8,<4
-nbformat>=5.10,<6
+nbformat>=5.11.1,<6
 numpy>=1.26,<3
 pandas>=2.2,<3
 requests>=2.31,<3
