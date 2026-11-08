@@ -7,8 +7,7 @@ authors:
     given-names: "I. K."
   - family-names: "Kyeremeh"
     given-names: "F."
-year: 2026
-date-released: 2026-07-16
+version: 1.0.1
 repository-code: "https://github.com/ntious/secure-data-analytics-with-genai"
 url: "https://github.com/ntious/secure-data-analytics-with-genai"
 license:
