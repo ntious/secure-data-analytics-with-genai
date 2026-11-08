@@ -8,6 +8,7 @@ authors:
   - family-names: "Kyeremeh"
     given-names: "F."
 version: 1.0.2
+doi: "10.5281/zenodo.24047273"
 repository-code: "https://github.com/ntious/secure-data-analytics-with-genai"
 url: "https://github.com/ntious/secure-data-analytics-with-genai"
 license:
