@@ -1,0 +1,24 @@
+{
+  "title": "Secure Data Analytics with GenAI and LLMs",
+  "creators": [
+    {
+      "name": "Nti, I. K."
+    },
+    {
+      "name": "Kyeremeh, F."
+    }
+  ],
+  "description": "Reusable two-day workshop materials covering AI literacy, responsible prompting, metadata-driven secure prompting, and privacy-conscious local analytics with Python and Jupyter notebooks. Code is licensed under MIT; educational content is licensed under CC BY 4.0. See LICENSE and CONTENT-LICENSE.md for details.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "mit",
+  "keywords": [
+    "AI literacy",
+    "responsible AI",
+    "secure data analytics",
+    "metadata-driven secure prompting",
+    "privacy-conscious analytics",
+    "large language models",
+    "workshop materials"
+  ]
+}
