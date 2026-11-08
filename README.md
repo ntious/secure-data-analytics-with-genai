@@ -155,6 +155,8 @@ Do not report suspected vulnerabilities or exposed secrets in a public issue. Fo
 
 Citation metadata is provided in [CITATION.cff](CITATION.cff).
 
+For the archived v1.0.2 release, cite [DOI 10.5281/zenodo.24047273](https://doi.org/10.5281/zenodo.24047273). The [concept DOI 10.5281/zenodo.24047272](https://doi.org/10.5281/zenodo.24047272) identifies the project across versions.
+
 ## Licenses
 
 Code including scripts, notebook code cells, reusable examples, configuration, and workflow files—is licensed under the [MIT License](LICENSE). Educational content—including Markdown, workshop notes, figures, activity instructions, diagrams, and notebook Markdown cells—is licensed under [CC BY 4.0](CONTENT-LICENSE.md). Third-party datasets and libraries retain their original terms.
